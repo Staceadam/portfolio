@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+section{
+  padding: 80px 0;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: responsive 32px 52px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: responsive 26px 36px;
+  font-weight: bold;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+
+  &:after {
+    display: block;
+    height: 2px;
+    background-color: #2980b9;
+    content:  " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+
+h3 {
+  font-size: responsive 20px 24px;
+  margin-bottom: 15px;
+}
+
+.row{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; }
+
+.box {
+  padding: 1%;
+}
+
+.clearfix {zoom:1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+.row {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+@media (max-width: 480px) {
+	.col {
+		/*margin: 1% 0 1% 0%;*/
+        margin: 0;
+	}
+}
