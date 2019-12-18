@@ -9,10 +9,13 @@ const About = () => {
       <div className="row">
         <h2>About</h2>
         <p>
-          Hi. I am a Front-end web developer who enjoys exploring new technologies, challenges that involve learning new skills and problem solving.
-          I have experience with popular CMS’s such as Wordpress Squarespace and Shopify. I also embrace the traditional aesthetics of frontend web development,
-          and am involved with new technologies such as SASS and Node.js . I’m also comfortable and familiar with frameprojects and libraries such as Bootstrap, Jquery,
-          Laravel, React and Express.
+        I’m Stacy Adam, a full stack software developer based in Madison. I specialize in React/React Native and have strong background with implementing REST APIs within .net and node. I am also experienced with GraphQL server/client side, and testing through Jest.        
+        </p>
+        <p>
+        Technology and computers have been in my life since I was a kid and I have always loved anything that had pixels. My interest in coding started at a young age while configuring bots in Diablo 2. After realizing the there wasn't a strong job market for D2 bot runners, I completed a degree in Web Design at WCTC. Most of my relevant skills and knowledge have been self taught.
+        </p>
+        <p>
+        When I’m not slinging divs, you can catch me playing pinball competitively and enjoying the sights and sounds that Madison has to offer.
         </p>
       </div>
       <div className="about-icons">

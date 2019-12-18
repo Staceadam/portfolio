@@ -51,10 +51,9 @@
       }
 
       &:hover,
-      &:active {
-        -webkit-transition: font .5s ease;
-        transition: font .5s ease;
-        font-size: 100%;
+      &:active {        
+        position: relative; 
+        top: -2px;
       }
     }
   }
