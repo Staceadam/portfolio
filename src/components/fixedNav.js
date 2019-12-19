@@ -8,9 +8,9 @@ class FixedNav extends Component {
     super(props);
 
     this.state = {
-                  fixed: 'mobile-nav-icon',
-                  open: 'main-nav'
-                  };
+      fixed: 'mobile-nav-icon',
+      open: 'main-nav'
+    };
 
     this.onHamClick = this.onHamClick.bind(this);
   }

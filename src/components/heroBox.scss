@@ -17,9 +17,14 @@ header {
   transform: translate(-50%, -50%);
   z-index: 0;
 
+  h1 {
+    font-size: 46px;
+  }
+
   h2 {
     color: #fff;
     font-weight: 300;
+    font-size: 32px;
   }
 
   img {
@@ -53,11 +58,11 @@ header {
     }
 
     a {
+      color:#888 !important;
       &:link,
       &:visited {
         text-decoration: none;
-        border: 0;
-        color:#888;
+        border: 0;        
         -webkit-transition: color 0.2s;
         transition: color 0.2s;
         font-size: 160%;
@@ -71,6 +76,7 @@ header {
 .fa-github,
 .fa-facebook,
 .fa-linkedin-square {
+  font-size: 32px;
   color: #848484;
   transition: all 1s;
 }

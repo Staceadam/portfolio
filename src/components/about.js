@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import FontAwesome from 'react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faCode, faRocket } from '@fortawesome/free-solid-svg-icons';
 
 import './about.scss';
 
@@ -18,10 +19,10 @@ const About = () => {
         When I’m not slinging divs, you can catch me playing pinball competitively and enjoying the sights and sounds that Madison has to offer.
         </p>
       </div>
-      <div className="about-icons">
-        <div><FontAwesome name='fa-coffee' className='fa-coffee' /></div>
-        <div><FontAwesome name='code' className='fa-code' /></div>
-        <div><FontAwesome name='fa-rocket' className='fa-rocket ' /></div>
+      <div className="about-icons row">
+        <div><FontAwesomeIcon icon={faCoffee} className='fa-coffee' /></div>
+        <div><FontAwesomeIcon icon={faCode} className='fa-code' /></div>
+        <div><FontAwesomeIcon icon={faRocket} className='fa-rocket' /></div>
       </div>
     </section>
   )

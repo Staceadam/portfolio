@@ -6,6 +6,7 @@ import Contact from './components/contact'
 import Footer from './components/footer'
 import HeroBox from './components/heroBox'
 import Projects from './components/projects'
+import Pinball from './components/Pinball'
 
 import './app.scss'
 
@@ -17,6 +18,7 @@ class App extends Component {
         <HeroBox />
         <About />
         <Projects />
+        <Pinball />
         <Contact />
         <Footer />
       </div>
