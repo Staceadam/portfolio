@@ -1,137 +1,89 @@
-import React from 'react';
-import Images from '../images/imagesArr'
+import React, { useState } from 'react';
+import { Overlay } from '@blueprintjs/core'
 
 import './projects.scss'
 
-
+const projectData = [
+	{		
+		name: 'Farm & Fleet',
+		platform: '.net Application',
+		className: 'fandf',
+		features: [
+			"this is a great app. wow"
+		],
+		link: 'https://www.farmandfleet.com'
+	},
+	{
+		name: 'Farm & Fleet Mobile',
+		platform: 'React Native Application',		
+		className: 'fandfapp'
+	},
+	{
+		name: 'Small Shops United',
+		platform: 'React Native Application',		
+		className: 'small-shops'
+	},
+	{
+		name: 'Antonio Fred Hair',
+		platform: 'SquareSpace Website',
+		className: 'antonio'
+	},
+	{
+		name: 'Bobs Coins & Hobbies',
+		platform: 'Shopify Website',		
+		className: 'bch'
+	},
+	{
+		name: 'Milwaukee Turnes',
+		platform: 'SquareSpace Website',
+		className: 'turners'
+	},
+	{
+		name: 'Movies App Server',
+		platform: 'GraphQL Server',
+		className: 'movie-server'
+	},
+	{
+		name: 'Movies App Client',
+		platform: 'GraphQL Client',
+		className: 'movie-client'
+	},
+	{
+		name: 'Game Server',
+		platform: 'Express REST API',		
+		className: 'game-server'
+	}
+];
 
 const Projects = () => {
+	const [activeModal, setActiveModal] = useState(null);	
+
+	const findAndSetModal = i => {			
+		setActiveModal(projectData[i])
+	}
+
+	const Project = ({ name, platform, className, index }) => {		
+		return (
+			<a className={`projects-item ${className}`} onClick={() => findAndSetModal(index)}>
+				<p className="header">{name}</p>
+				<p className="content">{platform}</p>
+				<p className="link">More Info</p>
+			</a>
+		);
+	}
+
   return (
-    <section className="section-projects" id="projects">
-        <div className="row">
-          <h2>Projects</h2>
-        </div>
-
-        <div className="wrapper">
-          <div className="cols">
-        			<div className="col" ontouchstart="this.classNameList.toggle('hover');">
-        				<div className="container">
-        					<div className="front afh">
-        						<div className="inner">
-        							<p>Antonio Fred Hair</p>
-        						</div>
-        					</div>
-        					<div className="back">
-        						<div className="inner">
-        						  <p>Designed and developer a portfolio site for a local hair and makeup stylist...Lots of images!</p>
-                      <p className="text-1"><a target="_blank" href="http://www.antoniofredhair.com/">View</a></p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div className="col" ontouchstart="this.classNameList.toggle('hover');">
-        				<div className="container">
-        					<div className="front bch">
-        						<div className="inner">
-        							<p>Bobs Coins and Hobbies</p>
-        						</div>
-        					</div>
-        					<div className="back">
-        						<div className="inner">
-        							<p>Shopify website for a hobby shop. Set up new POS system and trained both owners on categorizing and updating products.</p>
-                      <p className="text-1"><a target="_blank" href="https://bobscoinsandhobbies.com/">View</a></p>
-                    </div>
-        					</div>
-        				</div>
-        			</div>
-        			<div className="col" ontouchstart="this.classNameList.toggle('hover');">
-        				<div className="container">
-        					<div className="front amb">
-        						<div className="inner">
-        							<p>Ayla May Bead</p>
-        						</div>
-        					</div>
-        					<div className="back">
-        						<div className="inner">
-        							<p>Designed and developed a website for a local Milwaukee beading artist.</p>
-                      <p className="text-2"><a target="_blank" href="https://aylamaybead.com/">View</a>
-                      <a target="_blank" href="https://github.com/Staceadam/AylaMayBead">GitHub</a>
-                      </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div className="col" ontouchstart="this.classNameList.toggle('hover');">
-        				<div className="container">
-        					<div className="front omnifood">
-        						<div className="inner">
-        							<p>Omnifood</p>
-        						</div>
-        					</div>
-        					<div className="back">
-        						<div className="inner">
-        							<p>Mock food order website for learning some new responsive and animations techniques.</p>
-                      <p className="text-2"><a target="_blank" href="http://omnifood.stacyadam.io">View</a>
-                        <a target="_blank" href="https://github.com/Staceadam/OmniFood">GitHub</a>
-                      </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div className="col" ontouchstart="this.classNameList.toggle('hover');">
-        				<div className="container">
-        					<div className="front pig-game">
-        						<div className="inner">
-        							<p>Pig Game</p>
-        						</div>
-        					</div>
-        					<div className="back">
-        						<div className="inner">
-        							<p>Messing with more modular javascript programming and DOM manipulation.</p>
-                      <p className="text-2"><a target="_blank" href="http://piggame.stacyadam.io/">View</a>
-                        <a target="_blank" href="https://github.com/Staceadam/Pig-Game">GitHub</a>
-                      </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div className="col" ontouchstart="this.classNameList.toggle('hover');">
-        				<div className="container">
-        					<div className="front dice-roller">
-        						<div className="inner">
-        							<p>Dice Roller</p>
-        						</div>
-        					</div>
-        					<div className="back">
-        						<div className="inner">
-        							<p>Dice Roller with javascript to learn some more functional programming.</p>
-                      <p className="text-2"><a target="_blank" href="http://diceroller.stacyadam.io/">View</a>
-                        <a target="_blank" href="https://github.com/Staceadam/diceRoller">GitHub</a>
-                      </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div className="col" ontouchstart="this.classNameList.toggle('hover');">
-        				<div className="container">
-        					<div className="front budget-calc" >
-        						<div className="inner">
-        							<p>Budget Calc</p>
-        						</div>
-        					</div>
-        					<div className="back">
-        						<div className="inner">
-        							<p>Introduction to IFFEs and completely modular javascript structure.</p>
-                      <p className="text-2"><a target="_blank" href="http://budgetcalc.stacyadam.io/">View</a>
-                        <a target="_blank" href="https://github.com/Staceadam/budgetcalc">GitHub</a>
-                      </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-          </div>
-
+    <section className="section-projects" id="projects">        
+          <h2>Projects</h2>        
+        
+		<div className="projects-list row">
+			{projectData.map((project, i) => {
+				return <Project key={project.className} index={i} {...project} />;
+			})}				  
+		</div>
+		<Overlay isOpen={activeModal !== null} onClose={() => setActiveModal(null)}>
+			<p>{activeModal && activeModal.name}</p>
+		</Overlay>
     </section>
 
   )

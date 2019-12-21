@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithub, faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
-import Images from '../images/imagesArr'
 
 import './heroBox.scss'
 
@@ -9,7 +8,7 @@ const HeroBox = () => {
   return (
     <header>
       <div className="hero-text-box">
-        <img src={Images.me} alt="Stacy Adam" />
+        <img src={require('../images/meCropped.jpg')} alt="Stacy Adam" />
         <h1>Stacy Adam</h1>
 
         <h2>Full Stack Software Developer</h2>

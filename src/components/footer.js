@@ -20,7 +20,7 @@ const Footer = () => {
 
           <div>
             <p>
-              Copyright &copy; 2017 by StacyAdam. All rights reserved.
+              Copyright &copy; 2019 by StacyAdam. All rights reserved.
             </p>
           </div>
         </div>
