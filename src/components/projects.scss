@@ -1,79 +1,96 @@
 .section-projects {
-  background-color: #f4f4f4;
+	background-color: #f4f4f4;
 
-  .projects-list {
-    display: flex;    
-    justify-content: center;
-    flex-wrap: wrap;
+	.projects-list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 
-    .projects-item {            
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 280px;
-      margin: 20px 10px 0;
-      width: 350px;      
-      color: #FFF;
-      cursor: pointer;
-      text-shadow: 0 4px 3px rgba(0,0,0,.4), 0 8px 13px rgba(0,0,0,.1), 0 18px 23px rgba(0,0,0,.1);
+		.projects-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 280px;
+			margin: 20px 10px 0;
+			width: 350px;
+			color: #fff;
+			cursor: pointer;
+			text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
 
-      .header {
-        font-size: 1.8rem;
-      }
+			.header {
+				font-size: 1.8rem;
+			}
 
-      .content {
-        margin: 20px 0;
-        font-size: 1.35rem;
-      }
+			.content {
+				margin: 20px 0;
+				font-size: 1.35rem;
+			}
 
-      .link {
-        font-size: 1.35rem;
-        text-decoration: underline;
-      }
+			.link {
+				font-size: 1.35rem;
+				text-decoration: underline;
+			}
 
-      &:hover {
-        opacity: .75;
-      }
-      
-    }
+			&:hover {
+				opacity: 0.75;
+			}
+		}
 
-    .fandf {
-      background-image: linear-gradient(rgba(85,85,85,.45),rgba(85,85,85,.5)), url("../images/farm-and-fleet.jpg");
-    }
+		.fandf {
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)),
+				url('../images/farm-and-fleet.jpg');
+		}
 
-    .fandfapp {      
-        background-image: linear-gradient(rgba(85,85,85,.45),rgba(85,85,85,.5)), url("../images/fandf-mobile.jpg");
-    }
+		.fandfapp {
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)),
+				url('../images/fandf-mobile.jpg');
+		}
 
-    .small-shops {
-      background-image: linear-gradient(rgba(85,85,85,.45),rgba(85,85,85,.5)), url("../images/ssu.jpg");
-    }
-    
-    .antonio {
-      background-image: linear-gradient(rgba(85,85,85,.45),rgba(85,85,85,.5)), url("../images/antonio.png");
-    }
+		.small-shops {
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../images/ssu.jpg');
+		}
 
-    .bch {      
-        background-image: linear-gradient(rgba(85,85,85,.45),rgba(85,85,85,.5)), url("../images/bch.png");
-    }
+		.antonio {
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../images/antonio.png');
+		}
 
-    .turners {
-      background-image: linear-gradient(rgba(85,85,85,.45),rgba(85,85,85,.5)), url("../images/milwaukee-turners.jpg");
-    }
+		.bch {
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../images/bch.png');
+		}
 
-    .movie-server {
-      background-image: linear-gradient(rgba(85,85,85,.45),rgba(85,85,85,.5)), url("../images/movies-app-server.jpg");
-    }
+		.turners {
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)),
+				url('../images/milwaukee-turners.jpg');
+		}
 
-    .movie-client {      
-        background-image: linear-gradient(rgba(85,85,85,.45),rgba(85,85,85,.5)), url("../images/movies-app-client.jpg");
-    }
+		.movie-server {
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)),
+				url('../images/movies-app-server.jpg');
+		}
 
-    .game-server {
-      background-image: linear-gradient(rgba(85,85,85,.45),rgba(85,85,85,.5)), url("../images/game-server.jpg");
-    }    
-  }
+		.movie-client {
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)),
+				url('../images/movies-app-client.jpg');
+		}
+
+		.game-server {
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../images/game-server.jpg');
+		}
+	}
+}
+
+.modal-wrapper {
+	padding: 0 40px;
+	.modal-header {
+		margin-top: 20px;
+		font-size: 16px;
+		font-weight: 700;
+		text-decoration: underline;
+	}
+	li {
+		margin-bottom: 6px;
+	}
 }
