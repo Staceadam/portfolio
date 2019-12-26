@@ -7,10 +7,16 @@ import './heroBox.scss';
 const HeroBox = () => {
 	return (
 		<header>
-			<video class="header-video" width="100%" height="100%" autoplay loop>
-				<source src={require('../assets/coding.mp4')} type="video/mp4"></source>
-			</video>
-
+			<video
+				class="header-video"
+				width="100%"
+				height="100%"
+				type="video/mp4"
+				src={require('../assets/coding.mp4')}
+				autoPlay
+				muted
+				loop
+			/>
 			<div className="hero-text-box">
 				<img src={require('../assets/meCropped.jpg')} alt="Stacy Adam" />
 				<h1>Stacy Adam</h1>
