@@ -18,6 +18,7 @@
 			width: 350px;
 			color: #fff;
 			cursor: pointer;
+			text-decoration: none;
 			text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
 
 			.header {
@@ -41,56 +42,67 @@
 
 		.fandf {
 			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)),
-				url('../images/farm-and-fleet.jpg');
+				url('../assets/farm-and-fleet.jpg');
 		}
 
 		.fandfapp {
 			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)),
-				url('../images/fandf-mobile.jpg');
+				url('../assets/fandf-mobile.jpg');
 		}
 
 		.small-shops {
-			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../images/ssu.jpg');
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../assets/ssu.jpg');
 		}
 
 		.antonio {
-			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../images/antonio.png');
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../assets/antonio.png');
 		}
 
 		.bch {
-			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../images/bch.png');
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../assets/bch.png');
 		}
 
 		.turners {
 			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)),
-				url('../images/milwaukee-turners.jpg');
+				url('../assets/milwaukee-turners.jpg');
 		}
 
 		.movie-server {
 			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)),
-				url('../images/movies-app-server.jpg');
+				url('../assets/movies-app-server.jpg');
 		}
 
 		.movie-client {
 			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)),
-				url('../images/movies-app-client.jpg');
+				url('../assets/movies-app-client.jpg');
 		}
 
 		.game-server {
-			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../images/game-server.jpg');
+			background-image: linear-gradient(rgba(85, 85, 85, 0.45), rgba(85, 85, 85, 0.5)), url('../assets/game-server.jpg');
 		}
 	}
 }
 
 .modal-wrapper {
-	padding: 0 40px;
+	padding: 0 20px;
 	.modal-header {
 		margin-top: 20px;
 		font-size: 16px;
 		font-weight: 700;
 		text-decoration: underline;
 	}
+	ul {
+		margin: 0 20px;
+	}
 	li {
 		margin-bottom: 6px;
+	}
+	a {
+		font-weight: bold;
+	}
+	.button-wrapper {
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
 	}
 }

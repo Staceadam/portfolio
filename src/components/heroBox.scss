@@ -1,74 +1,75 @@
 header {
-  background-image: linear-gradient(rgba(41, 128, 185, 1), rgba(41, 128, 185, 1)), url(../images/hero.png);
-  margin-top: 40px;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background-attachment: fixed;
-  background-blend-mode: multiply;
+	margin-top: 40px;
+	height: 100vh;
+}
+
+.header-video {
+	display: block;
+	object-fit: cover !important;
+	height: 100vh;
 }
 
 .hero-text-box {
-  position: absolute;
-  text-align: center;
-  width: 65%;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
+	position: absolute;
+	text-align: center;
+	width: 65%;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
 
-  h1 {
-    font-size: 46px;
-  }
+	h1 {
+		font-size: 46px;
+	}
 
-  h2 {
-    color: #fff;
-    font-weight: 300;
-    font-size: 32px;
-  }
+	h2 {
+		color: #fff;
+		font-weight: 300;
+		font-size: 32px;
+	}
 
-  img {
-    width: 200px;
-    height: auto;
-    border: 4px solid #fff;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    vertical-align: middle;
+	img {
+		width: 200px;
+		height: auto;
+		border: 4px solid #fff;
+		border-radius: 50%;
+		margin-right: 10px;
+		margin-bottom: 20px;
+		vertical-align: middle;
 
-    @media only screen and (max-width: 767px) {
-      width: 180px;
-    }
+		@media only screen and (max-width: 767px) {
+			width: 180px;
+		}
 
-    @media only screen and (max-width: 480px) {
-      width: 160px;
-    }
-  }
+		@media only screen and (max-width: 480px) {
+			width: 160px;
+		}
+	}
 }
 
 .social-links {
-  list-style: none;
+	list-style: none;
 
-  li {
-    display: inline-block;
-    margin-right: 20px;
+	li {
+		display: inline-block;
+		margin-right: 20px;
 
-    &:last-child {
-      margin-right: 0;
-    }
+		&:last-child {
+			margin-right: 0;
+		}
 
-    a {
-      color:#888 !important;
-      &:link,
-      &:visited {
-        text-decoration: none;
-        border: 0;        
-        -webkit-transition: color 0.2s;
-        transition: color 0.2s;
-        font-size: 160%;
-      }
-    }
-  }
+		a {
+			color: #888 !important;
+			&:link,
+			&:visited {
+				text-decoration: none;
+				border: 0;
+				-webkit-transition: color 0.2s;
+				transition: color 0.2s;
+				font-size: 160%;
+			}
+		}
+	}
 }
 
 //icons
@@ -76,23 +77,23 @@ header {
 .fa-github,
 .fa-facebook,
 .fa-linkedin-square {
-  font-size: 32px;
-  color: #848484;
-  transition: all 1s;
+	font-size: 32px;
+	color: #848484;
+	transition: all 1s;
 }
 
 .fa-twitter:hover {
-  color: #55acee;
+	color: #55acee;
 }
 
 .fa-github:hover {
-  color: #222;
+	color: #222;
 }
 
 .fa-facebook:hover {
-  color: #3b5998;
+	color: #3b5998;
 }
 
 .fa-linkedin-square:hover {
-  color: #0083BE;
+	color: #0083be;
 }

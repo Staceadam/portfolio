@@ -1,82 +1,66 @@
-*:focus { outline:none; }
+*:focus {
+	outline: none;
+}
 
 .section-contact {
-  background: #f4f4f4;
+	background: #f4f4f4;
 }
 
 .contact-form {
-  width: 60%;
-  margin: 0 auto;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .submitContainer {
-  text-align: center;
+	text-align: center;
 }
 
 .message {
-  margin-top: 14px;
+	margin-top: 14px;
+	height: 140px;
 }
 
-.formHeader
-{
-  font-size: responsive 20px 24px;
-  font-weight: bold;
+.formHeader {
+	font-size: 24px;
+	font-weight: bold;
 }
 
-input[type=text],
-input[type=email] {
-  margin: 14px 0 10px 0;
+input[type='text'],
+input[type='email'] {
+	margin: 14px 0 10px 0;
 }
 
-input[type="submit"] {
-    cursor: pointer;
-    border-radius: 25px;
-    color: #fff;
-    border: none;
-    padding: 15px;
-    margin-top: 30px;
-    width: 175px;
-    letter-spacing: 0;
-    font-size: responsive 16px 20px;
-    -webkit-appearance: none;
-}
-
-input[type=text],
-input[type=email],
+input[type='text'],
+input[type='email'],
 select,
 textarea {
-  font-size: responsive 14px 16px;
-  width: 100%;
-  padding: 7px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
+	font-size: 15px;
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
 }
 
-.button {
-  border: none;
-  text-align: center;
-  padding: 1.2vw 3vw 1vw;
-  border-radius: 0.2vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1.3vw;
-  outline: none;
-  cursor: pointer;
-  transition: all .15s;
-  color: #fff;
-  -webkit-appearance: none;
+.contact-button {
+	border-top: 0;
+	width: 100px;
+	background: #3498db;
+	border-bottom: 3px solid #2980b9;
+	border-left: 1px solid #2980b9;
+	border-right: 1px solid #2980b9;
+	border-radius: 6px;
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	letter-spacing: 2px;
+	margin-top: 30px;
+	-webkit-appearance: none;
 
-  &:hover {
-    transform: translateY(-1px);
-    color: #e6e6e6;
-  }
-}
-
-.is-blue {
-  background: #409ad5;
-  box-shadow: 0 .4vw 0 hsl(204, 64%, 44%);
-
-  &:hover {
-    background: #2980b9;
-  }
+	&:hover {
+		transform: translateY(-1px);
+		color: #e6e6e6;
+	}
 }
