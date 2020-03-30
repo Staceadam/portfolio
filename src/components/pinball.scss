@@ -1,11 +1,11 @@
 .section-pinball {
-    background: #FFF;
-  
+    background: #fff;
+    width: 70%;
+    margin: 0 auto;
+
     p {
         margin-bottom: 40px;
         line-height: 145%;
-        width: 70%;
-        margin-left: 15%;
         font-size: 20px;
         text-align: center;
     }
@@ -14,7 +14,7 @@
         justify-content: center;
         font-size: 18px;
         ul {
-            list-style: none; 
+            list-style: none;
 
             li {
                 margin-bottom: 10px;
@@ -27,9 +27,7 @@
                 display: inline-block;
                 width: 1em;
                 margin-left: -1em;
-              }
-          }                    
+            }
+        }
     }
 }
-
-  
