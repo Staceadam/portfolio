@@ -1,66 +1,70 @@
 *:focus {
-	outline: none;
+    outline: none;
 }
 
 .section-contact {
-	background: #f4f4f4;
+    background: #f4f4f4;
 }
 
 .contact-form {
-	width: 60%;
-	margin: 0 auto;
+    width: 60%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 767px) {
+        width: 90%;
+    }
 }
 
 .submitContainer {
-	text-align: center;
+    text-align: center;
 }
 
 .message {
-	margin-top: 14px;
-	height: 140px;
+    margin-top: 14px;
+    height: 140px;
 }
 
 .formHeader {
-	font-size: 24px;
-	font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-input[type='text'],
-input[type='email'] {
-	margin: 14px 0 10px 0;
+input[type="text"],
+input[type="email"] {
+    margin: 14px 0 10px 0;
 }
 
-input[type='text'],
-input[type='email'],
+input[type="text"],
+input[type="email"],
 select,
 textarea {
-	font-size: 15px;
-	width: 100%;
-	padding: 7px;
-	border-radius: 3px;
-	border: 1px solid #ccc;
+    font-size: 15px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
 }
 
 .contact-button {
-	border-top: 0;
-	width: 100px;
-	background: #3498db;
-	border-bottom: 3px solid #2980b9;
-	border-left: 1px solid #2980b9;
-	border-right: 1px solid #2980b9;
-	border-radius: 6px;
-	text-align: center;
-	color: #fff;
-	padding: 10px;
-	font-size: 18px;
-	font-weight: 700;
-	cursor: pointer;
-	letter-spacing: 2px;
-	margin-top: 30px;
-	-webkit-appearance: none;
+    border-top: 0;
+    width: 100px;
+    background: #3498db;
+    border-bottom: 3px solid #2980b9;
+    border-left: 1px solid #2980b9;
+    border-right: 1px solid #2980b9;
+    border-radius: 6px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    -webkit-appearance: none;
 
-	&:hover {
-		transform: translateY(-1px);
-		color: #e6e6e6;
-	}
+    &:hover {
+        transform: translateY(-1px);
+        color: #e6e6e6;
+    }
 }
